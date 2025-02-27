@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #06080c;
+  --color-dark-2: #0b0e12;
+  --color-dark-3: #0f1318;
+  --color-danger: #eb0237;
+  --color-silver: #b4b5b6;
+  --color-off-white: #fafafa;
+  --color-grayish-teal: #f2f6f6;
+  --color-gray-bold: #313a47;
+
+  --text-header: 2rem;
+  --text-header--line-height: 2rem;
+  --text-header-mobile: 1.75rem;
+  --text-header-mobile--line-height: 2rem;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider::before {
+  position: absolute;
+  left: -7.5px;
+  bottom: 0;
+  top: 0;
+  width: 1px;
+  background-color: #141a21;
+  content: "";
+}
